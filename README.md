@@ -1,5 +1,7 @@
 ## OpenShift Virtualization Demo
 
+![Training Loop](_static/training-loop-logo.png)
+
 This guide walks through the process of creating a virtual machine using OpenShift Virtualization.
 
 OpenShift Virtualization allows teams to run traditional virtual machines directly inside a Kubernetes platform, alongside containers and cloud-native workloads.
