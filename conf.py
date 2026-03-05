@@ -21,7 +21,7 @@ extensions = [
 
 # ---- Source config ----
 source_suffix = {".md": "markdown"}
-root_doc = "readme"
+root_doc = "README"
 
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
