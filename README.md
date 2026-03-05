@@ -1,4 +1,4 @@
-# OpenShift VM Creation Demo
+## Overview
 
 This guide walks through the process of creating a virtual machine using OpenShift Virtualization.
 
