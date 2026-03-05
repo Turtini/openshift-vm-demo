@@ -213,7 +213,7 @@ You have successfully:
 
 ## Related Demo
 
-A companion guide shows how to create a virtual machine using [**Amazon Web Services**](https://docs.turtini.com/projects/aws-vm-demo/en/latest/README.html}.
+A companion guide shows how to create a virtual machine using [**Amazon Web Services**](https://docs.turtini.com/projects/aws-vm-demo/en/latest/README.html#).
 
 Together these demos illustrate the difference between:
 
