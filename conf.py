@@ -8,7 +8,7 @@ from turtini_sphinx_theme import get_theme_paths
 
 
 # ---- Project metadata ----
-project = "Zero Trust"
+project = "OpenShift VM Demo"
 author = "Turtini LLC"
 copyright = f"{datetime.utcnow().year}, Turtini LLC"
 
@@ -21,7 +21,7 @@ extensions = [
 
 # ---- Source config ----
 source_suffix = {".md": "markdown"}
-root_doc = "index"
+root_doc = "readme"
 
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
