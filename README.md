@@ -211,6 +211,8 @@ You have successfully:
 * Provisioned storage and networking
 * Accessed the VM console
 
+![AWSvKubernetes](_static/aws-kubernetes-vm.png)
+
 ---
 
 ## Related Demo
