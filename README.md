@@ -1,6 +1,6 @@
-## OpenShift Virtualization Demo
-
 ![Training Loop](_static/training-loop-logo.png)
+
+## OpenShift Virtualization Demo
 
 This guide walks through the process of creating a virtual machine using OpenShift Virtualization.
 
