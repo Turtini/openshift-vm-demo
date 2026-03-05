@@ -49,9 +49,15 @@ Persistent Storage + Networking
 
 ## Step 1 — Log into OpenShift
 
-1. Open the OpenShift Web Console
-2. Sign in with your cluster credentials
-3. Switch to the **Developer** or **Administrator** perspective
+1. Open your OpenShift Web Console
+
+Example
+```
+https://console-openshift-console.apps.cluster.example.com
+```
+Sign in with your cluster credentials
+
+2. Switch to the **Developer** or **Administrator** perspective
 
 You should now see the OpenShift dashboard.
 
@@ -80,11 +86,15 @@ Example template:
 * Fedora
 * Windows Server
 
+For our demo, choose Red Hat Enterprise Linux 9.
+
 Provide a name for the VM.
 
 Example:
 
-demo-vm
+```
+rhel-9-ocpv-demo-vm
+```
 
 ---
 
@@ -101,21 +111,41 @@ These settings are sufficient for most demo workloads.
 
 ---
 
-## Step 5 — Configure Storage
+## Step 5 — Storage Configuration
 
 OpenShift will automatically provision storage for the VM disk.
 
 Typical configuration:
 
-* Persistent Volume Claim
+* Persistent Volume Claim (PVC)
 * Container-native storage
 * Cluster storage class
+
+The template will create a Persistent Volume Claim (PVC)
+
+Example size: 
+
+```
+30 GiB
+```
+
+Storage Class example:
+
+```
+ocs-storagecluster-ceph-rbd
+```
 
 ---
 
 ## Step 6 — Configure Networking
 
-Use the default cluster network configuration.
+By default, the VM will attach to the pod network. This allows the VM to communicate with other workloads inside the cluster. For this demo, use the default cluster network configuration.
+
+Advanced configurations include:
+
+* Multus networks
+* VLAN attachment
+* SR-IOV 
 
 The VM will receive a network interface connected to the OpenShift cluster network.
 
@@ -138,6 +168,13 @@ From the Virtual Machines list:
 1. Select the VM
 2. Click **Console**
 
+OpenShift will create:
+
+* A Virtual Machine Instance
+* A launcher pod
+* Attach storage
+* Boot the OS
+
 The console provides direct access to the operating system running inside the VM.
 
 ---
@@ -148,9 +185,19 @@ Log into the virtual machine using the credentials configured in the template.
 
 Once logged in, run:
 
+```
 uname -a
+```
 
 This confirms the VM is running successfully inside the Kubernetes cluster.
+
+Inside the console, also run:
+
+```
+hostnamectl
+```
+
+OpenShift Virtualization runs VMs using KubeVirt, QEMU, & KVM. The VM runs inside a Kubernetes pod called a virt-launcher. This allows VMs and containers to share the same cluster infrastructure. 
 
 ---
 
