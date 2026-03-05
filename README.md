@@ -228,5 +228,5 @@ Turtini builds operational platforms that make open source delivery seamless for
 
 Learn more:
 
-https://turtini.com
+[https://turtini.com] (https://turtini.com)
 
