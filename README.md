@@ -29,6 +29,7 @@ Estimated time: **10–15 minutes**
 
 The virtual machine will run inside the Kubernetes cluster using OpenShift Virtualization.
 
+```
 User
 │
 ▼
@@ -42,6 +43,7 @@ Virtual Machine
 │
 ▼
 Persistent Storage + Networking
+```
 
 ---
 
