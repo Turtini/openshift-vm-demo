@@ -1,4 +1,6 @@
 # OpenShift VM Creation Demo
 
-```{include} README.md
-:relative-images:
+```{toctree}
+:maxdepth: 2
+
+README
