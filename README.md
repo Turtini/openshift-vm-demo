@@ -61,7 +61,7 @@ Sign in with your cluster credentials
 
 2. Switch to the **Virtualization** perspective
 
-You should now see the OpenShift dashboard.
+You should now see the OpenShift dashboard along with a popup to create a virtual machine unless the popup has been disabled.
 
 ---
 
