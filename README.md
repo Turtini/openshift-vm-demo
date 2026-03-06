@@ -74,21 +74,15 @@ From the left navigation menu:
 
 This section allows you to create and manage virtual machines within the cluster.
 
+Choose Red Hat Enterprise Linux 9.
+
 ---
 
 ## Step 3 — Create a Virtual Machine
 
 Click **Create Virtual Machine**.
 
-Choose **From Template** for the demo.
-
-Example template:
-
-* Red Hat Enterprise Linux
-* Fedora
-* Windows Server
-
-For our demo, choose Red Hat Enterprise Linux 9.
+Choose under **2 Select Instance Type** General Purpose U Series.
 
 Provide a name for the VM.
 
@@ -106,8 +100,8 @@ Set the VM resources.
 
 Recommended demo settings:
 
-CPU: 2
-Memory: 4 GiB
+CPU: 1
+Memory: 1 GiB
 
 These settings are sufficient for most demo workloads.
 
