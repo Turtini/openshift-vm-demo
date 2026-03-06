@@ -117,7 +117,7 @@ Typical configuration:
 * Container-native storage
 * Cluster storage class
 
-The template will create a Persistent Volume Claim (PVC)
+The template will create a Persistent Volume Claim (PVC) using the defaults. You do not have to change the Storage Class for our demo.
 
 Example size: 
 
@@ -128,7 +128,7 @@ Example size:
 Storage Class example:
 
 ```
-ocs-storagecluster-ceph-rbd
+ocs-external-storagecluster-ceph-rbd
 ```
 
 ---
