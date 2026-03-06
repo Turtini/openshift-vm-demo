@@ -59,7 +59,7 @@ https://console-openshift-console.apps.cluster.example.com
 ```
 Sign in with your cluster credentials
 
-2. Switch to the **Developer** or **Administrator** perspective
+2. Switch to the **Virtualization** perspective
 
 You should now see the OpenShift dashboard.
 
