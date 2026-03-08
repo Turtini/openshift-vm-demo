@@ -218,13 +218,4 @@ Together these demos illustrate the difference between:
 * Cloud-based virtual machines
 * Virtual machines running inside Kubernetes
 
----
-
-## About Turtini
-
-Turtini builds operational platforms that make open source delivery seamless for federal teams.
-
-Learn more:
-
-[https://turtini.com](https://turtini.com)
 
