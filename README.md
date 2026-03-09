@@ -68,6 +68,8 @@ You should now see the OpenShift dashboard along with a popup to **Create a Virt
 
 ![ocpv-create-virtualmachine](_static/ocpv-create-virtualmachine.png)
 
+**Note:** The Virtualization persona is available only when Red Hat OpenShift Virtualization is installed and properly configured. In this lab environment the installation and configuration has already been performed for us.
+
 ---
 
 ## Step 2 — Navigate to Virtualization (Skip if you were able to click on **Create a VirtualMachine** from the popup)
