@@ -70,22 +70,33 @@ You should now see the OpenShift dashboard along with a popup to **Create a Virt
 
 ---
 
-## Step 2 — Navigate to Virtualization
+## Step 2 — Navigate to Virtualization (Skip if you were able to click on **Create a VirtualMachine** from the popup)
 
 From the left navigation menu:
 
-1. Click **Virtualization**
-2. Select **Virtual Machines**
+1. Select **VirtualMachines**
 
 This section allows you to create and manage virtual machines within the cluster.
 
-Choose Red Hat Enterprise Linux 9.
+2. Click **+ Create Project**
+
+![ocpv-create-project](_static/ocpv-create-project.png)
+
+Name the project **ocpv-demo**
+
+![ocpv-create-project-ocpv-demo](_static/ocpv-create-project-ocpv-demo.png)
 
 ---
 
 ## Step 3 — Create a Virtual Machine
 
-Click **Create Virtual Machine**.
+Click **Create VirtualMachine**.
+
+![ocpv-virtualmachines-create-virtualmachine](_static/ocpv-virtualmachines-create-virtualmachine.png)
+
+Choose **From InstanceType**
+
+![ocpv-virtualmachines-from-instancetype](_static/ocpv-virtualmachines-from-instancetype.png)
 
 Choose under **2 Select Instance Type** General Purpose U Series.
 
