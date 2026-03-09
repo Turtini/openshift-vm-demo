@@ -62,7 +62,11 @@ Your username and password will be provided to you.
 
 2. Switch to the **Virtualization** perspective
 
-You should now see the OpenShift dashboard along with a popup to create a virtual machine unless the popup has been disabled.
+![ocpv-virtualization-perspective](_static/ocpv-virtualization-perspective.png)
+
+You should now see the OpenShift dashboard along with a popup to **Create a VirtualMachine** unless the popup has been disabled.
+
+![ocpv-create-virtualmachine](_static/ocpv-create-virtualmachine.png)
 
 ---
 
