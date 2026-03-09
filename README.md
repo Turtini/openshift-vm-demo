@@ -98,15 +98,21 @@ Choose **From InstanceType**
 
 ![ocpv-virtualmachines-from-instancetype](_static/ocpv-virtualmachines-from-instancetype.png)
 
-Choose under **2 Select Instance Type** General Purpose U Series.
+Under **1 Select volume to boot from** choose **rhel9**
 
-Provide a name for the VM.
+![ocpv-virtualmachines-rhel9](_static/ocpv-virtualmachines-rhel9.png)
 
-Example:
+Choose under **2 Select Instance Type** General Purpose U Series and keep the default configuration - medium, 1 CPUs, 4 GiB Memory.
+
+![ocpv-virtualmachines-useries](_static/ocpv-virtualmachines-useries.png)
+
+Under **3 VirtualMachine details**, provide a name for the VM.
 
 ```
 rhel-9-ocpv-demo-vm
 ```
+
+![ocpv-virtualmachines-name](_static/ocpv-virtualmachines-name.png)
 
 ---
 
