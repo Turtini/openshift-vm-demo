@@ -143,12 +143,6 @@ Storage Class example:
 ocs-external-storagecluster-ceph-rbd
 ```
 
-![ocpv-virtualmachines-create-virtualmachine](_static/ocpv-virtualmachines-create-virtualmachine.png)
-
----
-
-## Step 4 — Configure Networking
-
 By default, the VM will attach to the pod network. This allows the VM to communicate with other workloads inside the cluster. For this demo, use the default cluster network configuration.
 
 Advanced configurations include:
@@ -161,7 +155,7 @@ The VM will receive a network interface connected to the OpenShift cluster netwo
 
 ---
 
-## Step 5 — Launch the VM
+## Step 4 — Launch the VM
 
 Click **Create Virtual Machine**.
 
@@ -169,35 +163,42 @@ The platform will begin provisioning the VM and attaching storage and networking
 
 Provisioning typically takes **30–90 seconds** depending on the cluster.
 
+![ocpv-virtualmachines-create-virtualmachine](_static/ocpv-virtualmachines-create-virtualmachine.png)
+
+![ocpv-virtualmachines-virtualmachine](_static/ocpv-virtualmachines-virtualmachine.png)
+
 ---
 
-## Step 6 — Access the Console
+## Step 5 — Access the Console
 
-From the Virtual Machines list:
+Click **Open web console**
 
-1. Select the VM
-2. Click **Console**
-
-OpenShift will create:
+OpenShift has already created:
 
 * A Virtual Machine Instance
 * A launcher pod
-* Attach storage
-* Boot the OS
+* Attached storage
+* Booted the OS
 
 The console provides direct access to the operating system running inside the VM.
 
+![ocpv-virtualmachines-open-web-console](_static/ocpv-virtualmachines-open-web-console.png)
+
 ---
 
-## Step 7 — Verify the VM
+## Step 6 — Verify the VM
 
-Log into the virtual machine using the credentials configured in the template.
+Log into the virtual machine using the credentials configured in the template. To login, you will need to first copy the **User name** which will be rhel, then click **Paste to console**. Then, click to copy **Password** then click **Paste to console**
 
-Once logged in, run:
+![ocpv-virtualmachines-web-console](_static/ocpv-virtualmachines-web-console.png)
+
+Once logged in, manually type commands and run:
 
 ```
 uname -a
 ```
+
+![ocpv-virtualmachines-web-console-uname-a](_static/ocpv-virtualmachines-web-console-uname-a.png)
 
 This confirms the VM is running successfully inside the Kubernetes cluster.
 
@@ -206,6 +207,8 @@ Inside the console, also run:
 ```
 hostnamectl
 ```
+
+![ocpv-virtualmachines-web-console-hostnamectl](_static/ocpv-virtualmachines-web-console-hostnamectl.png)
 
 OpenShift Virtualization runs VMs using KubeVirt, QEMU, & KVM. The VM runs inside a Kubernetes pod called a virt-launcher. This allows VMs and containers to share the same cluster infrastructure. 
 
