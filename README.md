@@ -51,13 +51,14 @@ Persistent Storage + Networking
 
 ## Step 1 — Log into OpenShift
 
-1. Open your OpenShift Web Console
+1. Access today's Lab Environment:
 
-Example
 ```
-https://console-openshift-console.apps.cluster.example.com
+https://console-openshift-console.apps.cluster-44pgg.dynamic.redhatworkshops.io/
 ```
-Sign in with your cluster credentials
+Your username and password will be provided to you.
+
+![ocpv-login](_static/ocpv-login.png)
 
 2. Switch to the **Virtualization** perspective
 
