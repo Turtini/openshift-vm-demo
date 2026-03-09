@@ -114,22 +114,12 @@ rhel-9-ocpv-demo-vm
 
 ![ocpv-virtualmachines-name](_static/ocpv-virtualmachines-name.png)
 
----
-
-## Step 4 — Configure Resources
-
-Set the VM resources.
-
-Recommended demo settings:
+Keep all the other settings the same. 
 
 CPU: 1
-Memory: 1 GiB
-
-These settings are sufficient for most demo workloads.
-
----
-
-## Step 5 — Storage Configuration
+Memory: 4 GiB
+Disk size: 30 GiB
+Storage class: ocs-external-storagecluster-ceph-rbd
 
 OpenShift will automatically provision storage for the VM disk.
 
@@ -153,9 +143,11 @@ Storage Class example:
 ocs-external-storagecluster-ceph-rbd
 ```
 
+![ocpv-virtualmachines-create-virtualmachine](_static/ocpv-virtualmachines-create-virtualmachine.png)
+
 ---
 
-## Step 6 — Configure Networking
+## Step 4 — Configure Networking
 
 By default, the VM will attach to the pod network. This allows the VM to communicate with other workloads inside the cluster. For this demo, use the default cluster network configuration.
 
@@ -169,7 +161,7 @@ The VM will receive a network interface connected to the OpenShift cluster netwo
 
 ---
 
-## Step 7 — Launch the VM
+## Step 5 — Launch the VM
 
 Click **Create Virtual Machine**.
 
@@ -179,7 +171,7 @@ Provisioning typically takes **30–90 seconds** depending on the cluster.
 
 ---
 
-## Step 8 — Access the Console
+## Step 6 — Access the Console
 
 From the Virtual Machines list:
 
@@ -197,7 +189,7 @@ The console provides direct access to the operating system running inside the VM
 
 ---
 
-## Step 9 — Verify the VM
+## Step 7 — Verify the VM
 
 Log into the virtual machine using the credentials configured in the template.
 
