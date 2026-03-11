@@ -54,7 +54,7 @@ Persistent Storage + Networking
 1. Access today's Lab Environment:
 
 ```
-https://console-openshift-console.apps.cluster-44pgg.dynamic.redhatworkshops.io/
+https://console-openshift-console.apps.cluster-wmjhg.dynamic.redhatworkshops.io/
 ```
 Your username and password will be provided to you.
 
